@@ -1,13 +1,15 @@
 name: eShopOnWeb Build and Test
 
-on: [push, pull_request, workflow_dispatch]
+on: workflow_dispatch
 
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    RESOURCE-GROUP: rg-eshoponweb-westeurope
 
-    steps:
+
+995758cb-1f77-4aaf-8774-baea9f949a22 devops-webapp-westeurope-1777929204
+
     - uses: actions/checkout@v2
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
@@ -20,3 +22,4 @@ jobs:
     
     - name: Test with dotnet
       run: dotnet test ./eShopOnWeb.sln --configuration Release
+
