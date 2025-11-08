@@ -5,11 +5,11 @@ on: workflow_dispatch
 jobs:
   build:
 
-    RESOURCE-GROUP: rg-eshoponweb-westeurope
-
-    steps:
+     RESOURCE-GROUP: rg-eshoponweb-eastus
+location:East Europe
+steps:
    995758cb-1f77-4aaf-8774-baea9f949a22 
-    - name: devops-webapp-westeurope-1777929204
+    - name: devops-webapp-eastus-569532001
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: '8.0.x'
@@ -20,4 +20,5 @@ jobs:
     
     - name: Test with dotnet
       run: dotnet test ./eShopOnWeb.sln --configuration Release
+
 
