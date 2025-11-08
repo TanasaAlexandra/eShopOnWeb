@@ -6,7 +6,7 @@ jobs:
   build:
 
      RESOURCE-GROUP: rg-eshoponweb-eastus
-location:East Europe
+      location:east-europe
 steps:
    995758cb-1f77-4aaf-8774-baea9f949a22 
     - name: devops-webapp-eastus-569532001
@@ -20,5 +20,6 @@ steps:
     
     - name: Test with dotnet
       run: dotnet test ./eShopOnWeb.sln --configuration Release
+
 
 
